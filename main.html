@@ -3,10 +3,87 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	
+	 <title>Semantic Tables and Media</title>
+	 <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        table {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
+	<table>
+        <thead>
+            <tr>
+                <th>Roll numbers</th>
+                <th>Names</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ritesh</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Mugesh</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Rahul</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Heading -->
+    <h2>List of medias</h2>
+
+    <!-- Ordered List -->
+    <ol>
+
+        <!-- Image -->
+        <li>
+            <img 
+                src="https://picsum.photos/id/123/200/300" 
+                alt="Random image"
+            >
+        </li>
+
+        <!-- Video -->
+        <li>
+            <video width="320" height="240" controls>
+                <source 
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
+                    type="video/mp4"
+                >
+            </video>
+        </li>
+
+        <!-- Audio -->
+        <li>
+            <audio controls>
+                <source 
+                    src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" 
+                    type="audio/ogg"
+                >
+            </audio>
+        </li>
+
+    </ol>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
