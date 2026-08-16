@@ -5,66 +5,88 @@
 <head>
 	
 	 <title>Semantic Tables and Media</title>
-	 
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #222;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px 14px;
+    text-align: left;
+  }
+  thead th {
+    background-color: #f0f0f0;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  ol li {
+    margin-bottom: 20px;
+  }
+  img, video, audio {
+    max-width: 100%;
+    display: block;
+    margin-top: 8px;
+  }
+</style>
 </head>
-
 <body>
-	     <table border="1">
-    <thead>
-      <tr>
-        <th>Roll numbers</th>
-        <th>Names</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Ritesh</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Rahul</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Priya</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>List of medias</h2>
-
  
-  <ol>
-    
-    <li>
-      <img 
-        src="https://picsum.photos/id/123/200/300" 
-        alt="Random placeholder Image"
-      >
-    </li>
-
-    <li>
-      <video controls>
-        <source 
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
-          type="video/mp4"
-        >
-		  your browser does not support the video tag.
-      </video>
-    </li>
-
-    <li>
-      <audio controls>
-        <source 
-          src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" 
-          type="audio/ogg"
-        >
-		  Your browser does not support the audio tag.
-      </audio>
-    </li>
-  </ol>
+<table>
+  <caption>Student Roll Numbers and Names</caption>
+  <thead>
+    <tr>
+      <th scope="col">Roll Number</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Aarav Sharma</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Priya Nair</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Rohan Mehta</td>
+    </tr>
+  </tbody>
+</table>
+ 
+<h2>List of medias</h2>
+ 
+<ol>
+  <li>
+    <img src="https://picsum.photos/id/123/200/300" alt="Random placeholder photo from Picsum">
+  </li>
+  <li>
+    <video controls width="320">
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </li>
+  <li>
+    <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </li>
+</ol>
 </body>
 
 </html>
